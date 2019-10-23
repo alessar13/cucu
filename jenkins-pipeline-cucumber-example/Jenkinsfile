@@ -9,6 +9,7 @@ pipeline{
             steps {
 
                     echo '!!!!!!!!!!!!!'
+                    cd .\jenkins-pipeline-cucumber-example\
 
             }
         }
