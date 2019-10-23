@@ -24,16 +24,13 @@ pipeline{
 
             steps {
 
-                
-                    sh 'mvn test -f /var/jenkins_home/workspace/cucumber-pipline-report/jenkins-pipeline-cucumber-example'
-
-               
+                sh 'mvn test -f /var/jenkins_home/workspace/cucumber-pipline-report/jenkins-pipeline-cucumber-example'
 
             }
         }
 
 
-        stage ('Cucumber Reports') {
+        finally ('Cucumber Reports') {
 
             steps {
                 cucumber buildStatus: "UNSTABLE",
