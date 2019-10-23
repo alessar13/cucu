@@ -4,6 +4,15 @@ pipeline{
 
     stages {
 
+        stage ('Say Stage') {
+
+            steps {
+
+                    echo '!!!!!!!!!!!!!'
+
+            }
+        }
+
         stage ('Compile Stage') {
 
             steps {
