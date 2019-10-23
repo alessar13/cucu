@@ -24,9 +24,10 @@ pipeline{
 
             steps {
 
+                
                     sh 'mvn test -f /var/jenkins_home/workspace/cucumber-pipline-report/jenkins-pipeline-cucumber-example'
 
-                }
+               
 
             }
         }
