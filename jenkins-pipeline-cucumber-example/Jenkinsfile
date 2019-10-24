@@ -33,7 +33,7 @@ pipeline{
         stage ('Cucumber Reports') {
 
             steps {
-                sh 'cp /var/jenkins_home/workspace/cucumber-pipline-report/target/cucumber.json /var/jenkins_home/jobs/cucumber-pipline-report/builds/19/cucumber-html-reports/.cache'
+                
                 cucumber buildStatus: "UNSTABLE",
                     fileIncludePattern: "**/cucumber.json",
                     jsonReportDirectory: 'target'
