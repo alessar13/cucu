@@ -36,16 +36,17 @@ pipeline {
             slackSend(
                     teamDomain: "cbs.slack.com",
                     channel: "lex",
-                    tokenCredentialId: "SLACK_TOKEN",
+                    tokenCredentialId: "slack_token",
                     color: "good",
                     message: "The pipeline ${currentBuild.fullDisplayName} completed successfully.")
         }
 
         failure {
-            slackSend(channel: "lex",
-                    token: "TiR2jxb4D6bySxtcCXDnOWCR",
-                    tokenCredentialId: "SLACK_TOKEN",
-                    color: 'bad',
+            slackSend(
+                    teamDomain: "cbs.slack.com",
+                    channel: "lex",
+                    tokenCredentialId: "slack_token",
+                    color: "good",
                     message: "The pipeline ${currentBuild.fullDisplayName} has failed!.")
         }
     }
