@@ -5,17 +5,20 @@ pipeline {
     }
     
     stages {
-        job('ci') {
-            description 'Build and test the app.'
-            scm {
-                github 'https://github.com/alessar13/cucu/blob/master/Jenkinsfile'
+        stage {
+             job('ci') {
+                description 'Build and test the app.'
+                scm {
+                    github 'https://github.com/alessar13/cucu/blob/master/Jenkinsfile'
+            }
+            steps {
+                gradle 'test'
+            }
+            publishers {
+                archiveJunit 'build/test-results/**/*.xml'
+            }
         }
-        steps {
-            gradle 'test'
-        }
-        publishers {
-            archiveJunit 'build/test-results/**/*.xml'
-        }
+       
     }
     }
     
