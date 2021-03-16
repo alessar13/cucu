@@ -1,3 +1,4 @@
+pipeline {
 job('ci') {
     description 'Build and test the app.'
     scm {
@@ -10,4 +11,4 @@ job('ci') {
         archiveJunit 'build/test-results/**/*.xml'
     }
 }
-        
+}
