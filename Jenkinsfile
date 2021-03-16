@@ -1,7 +1,7 @@
 job('ci') {
     description 'Build and test the app.'
     scm {
-        github 'sheehan/job-dsl-playground'
+        github 'https://github.com/alessar13/cucu/blob/master/Jenkinsfile'
     }
     steps {
         gradle 'test'
