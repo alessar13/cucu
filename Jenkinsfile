@@ -1,25 +1,8 @@
-pipeline {
-    
-    agent {
-        any
-    }
-    
-    stages {
-        stage {
-             job('ci') {
-                description 'Build and test the app.'
-                scm {
-                    github 'https://github.com/alessar13/cucu/blob/master/Jenkinsfile'
-            }
-            steps {
-                gradle 'test'
-            }
-            publishers {
-                archiveJunit 'build/test-results/**/*.xml'
-            }
-        }
-       
-    }
-    }
-    
+folder('project-a') {
+    displayName('Project A')
+    description('Folder for project A')
+}
+
+folder('project-a/testing') {
+    description('Folder containing all QA jobs for project A')
 }
