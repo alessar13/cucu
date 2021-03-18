@@ -1,4 +1,4 @@
-pipelineJob('APIGEE/NON-PROD/proxies/v1/ecom-branches-proxy/dev/ecom-branches') {
+pipelineJob('Development/APIGEE/NON-PROD/proxies/v1/ecom-branches-proxy/dev/ecom-branches') {
     logRotator {
         daysToKeep(5)
     }
@@ -28,7 +28,7 @@ pipelineJob('APIGEE/NON-PROD/proxies/v1/ecom-branches-proxy/dev/ecom-branches') 
 
 }
 
-pipelineJob('APIGEE/NON-PROD/proxies/v1/ecom-branches-proxy/qa/ecom-branches') {
+pipelineJob('Development/APIGEE/NON-PROD/proxies/v1/ecom-branches-proxy/qa/ecom-branches') {
     logRotator {
         daysToKeep(5)
     }
@@ -58,7 +58,7 @@ pipelineJob('APIGEE/NON-PROD/proxies/v1/ecom-branches-proxy/qa/ecom-branches') {
 
 }
 
-pipelineJob('APIGEE/NON-PROD/proxies/v1/ecom-branches-proxy/pre-prod/ecom-branches') {
+pipelineJob('Development/APIGEE/NON-PROD/proxies/v1/ecom-branches-proxy/pre-prod/ecom-branches') {
     logRotator {
         daysToKeep(5)
     }

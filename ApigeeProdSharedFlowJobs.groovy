@@ -1,4 +1,4 @@
-pipelineJob('APIGEE/PROD/shared-flows/v1/sf-default-fault-prod') {
+pipelineJob('Development/APIGEE/PROD/shared-flows/v1/sf-default-fault-prod') {
     logRotator {
         daysToKeep(5)
     }
@@ -27,7 +27,7 @@ pipelineJob('APIGEE/PROD/shared-flows/v1/sf-default-fault-prod') {
     }
 }
 
-pipelineJob('APIGEE/PROD/shared-flows/v1/sf-proxy-fault-prod') {
+pipelineJob('Development/APIGEE/PROD/shared-flows/v1/sf-proxy-fault-prod') {
     logRotator {
         daysToKeep(5)
     }
@@ -56,7 +56,7 @@ pipelineJob('APIGEE/PROD/shared-flows/v1/sf-proxy-fault-prod') {
     }
 }
 
-pipelineJob('APIGEE/PROD/shared-flows/v1/sf-target-fault-prod') {
+pipelineJob('Development/APIGEE/PROD/shared-flows/v1/sf-target-fault-prod') {
     logRotator {
         daysToKeep(5)
     }

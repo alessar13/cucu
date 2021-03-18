@@ -1,4 +1,4 @@
-pipelineJob('APIGEE/PROD/proxies/v1/ecom-branches-prod') {
+pipelineJob('Development/APIGEE/PROD/proxies/v1/ecom-branches-prod') {
     logRotator {
         daysToKeep(5)
     }
