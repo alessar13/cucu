@@ -26,15 +26,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                script {
-                    git branch: 'master',
-                    credentialsId: 'jenkins',
-                    url: 'git@bitbucket.org:toolstation/ecom-branches-v1.git'
-                }
-            }
-        }
 
         stage('Create .env File') {
             steps {

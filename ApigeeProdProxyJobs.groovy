@@ -3,13 +3,6 @@ pipelineJob('Development/APIGEE/PROD/proxies/v1/ecom-branches-prod') {
         daysToKeep(5)
     }
 
-    properties {
-        disableConcurrentBuilds()
-        preserveStashes {
-            buildCount(30)
-        }
-    }
-
     definition {
         cpsScm {
             scm {

@@ -3,13 +3,6 @@ pipelineJob('Development/APIGEE/NON-PROD/proxies/v1/ecom-branches-proxy/dev/ecom
         daysToKeep(5)
     }
 
-    properties {
-        disableConcurrentBuilds()
-        preserveStashes {
-            buildCount(30)
-        }
-    }
-
     definition {
         cpsScm {
             scm {
@@ -33,12 +26,6 @@ pipelineJob('Development/APIGEE/NON-PROD/proxies/v1/ecom-branches-proxy/qa/ecom-
         daysToKeep(5)
     }
 
-    properties {
-        disableConcurrentBuilds()
-        preserveStashes {
-            buildCount(30)
-        }
-    }
 
     definition {
         cpsScm {
@@ -61,13 +48,6 @@ pipelineJob('Development/APIGEE/NON-PROD/proxies/v1/ecom-branches-proxy/qa/ecom-
 pipelineJob('Development/APIGEE/NON-PROD/proxies/v1/ecom-branches-proxy/pre-prod/ecom-branches') {
     logRotator {
         daysToKeep(5)
-    }
-
-    properties {
-        disableConcurrentBuilds()
-        preserveStashes {
-            buildCount(30)
-        }
     }
 
     definition {

@@ -3,13 +3,6 @@ pipelineJob('Development/APIGEE/NON-PROD/shared-flows/v1/default-fault/dev/defau
         daysToKeep(5)
     }
 
-    properties {
-        disableConcurrentBuilds()
-        preserveStashes {
-            buildCount(30)
-        }
-    }
-
     definition {
         cpsScm {
             scm {
@@ -31,13 +24,6 @@ pipelineJob('Development/APIGEE/NON-PROD/shared-flows/v1/default-fault/qa/defaul
         daysToKeep(5)
     }
 
-    properties {
-        disableConcurrentBuilds()
-        preserveStashes {
-            buildCount(30)
-        }
-    }
-
     definition {
         cpsScm {
             scm {
@@ -57,13 +43,6 @@ pipelineJob('Development/APIGEE/NON-PROD/shared-flows/v1/default-fault/qa/defaul
 pipelineJob('Development/APIGEE/NON-PROD/shared-flows/v1/default-fault/pre-prod/default-fault') {
     logRotator {
         daysToKeep(5)
-    }
-
-    properties {
-        disableConcurrentBuilds()
-        preserveStashes {
-            buildCount(30)
-        }
     }
 
     definition {
@@ -89,13 +68,6 @@ pipelineJob('Development/APIGEE/NON-PROD/shared-flows/v1/proxy-fault/dev/proxy-f
         daysToKeep(5)
     }
 
-    properties {
-        disableConcurrentBuilds()
-        preserveStashes {
-            buildCount(30)
-        }
-    }
-
     definition {
         cpsScm {
             scm {
@@ -117,13 +89,6 @@ pipelineJob('Development/APIGEE/NON-PROD/shared-flows/v1/proxy-fault/qa/proxy-fa
         daysToKeep(5)
     }
 
-    properties {
-        disableConcurrentBuilds()
-        preserveStashes {
-            buildCount(30)
-        }
-    }
-
     definition {
         cpsScm {
             scm {
@@ -143,13 +108,6 @@ pipelineJob('Development/APIGEE/NON-PROD/shared-flows/v1/proxy-fault/qa/proxy-fa
 pipelineJob('Development/APIGEE/NON-PROD/shared-flows/v1/proxy-fault/pre-prod/proxy-fault') {
     logRotator {
         daysToKeep(5)
-    }
-
-    properties {
-        disableConcurrentBuilds()
-        preserveStashes {
-            buildCount(30)
-        }
     }
 
     definition {
@@ -175,13 +133,6 @@ pipelineJob('Development/APIGEE/NON-PROD/shared-flows/v1/target-fault/dev/target
         daysToKeep(5)
     }
 
-    properties {
-        disableConcurrentBuilds()
-        preserveStashes {
-            buildCount(30)
-        }
-    }
-
     definition {
         cpsScm {
             scm {
@@ -203,12 +154,6 @@ pipelineJob('Development/APIGEE/NON-PROD/shared-flows/v1/target-fault/qa/target-
         daysToKeep(5)
     }
 
-    properties {
-        disableConcurrentBuilds()
-        preserveStashes {
-            buildCount(30)
-        }
-    }
 
     definition {
         cpsScm {
@@ -229,13 +174,6 @@ pipelineJob('Development/APIGEE/NON-PROD/shared-flows/v1/target-fault/qa/target-
 pipelineJob('Development/APIGEE/NON-PROD/shared-flows/v1/target-fault/pre-prod/target-fault') {
     logRotator {
         daysToKeep(5)
-    }
-
-    properties {
-        disableConcurrentBuilds()
-        preserveStashes {
-            buildCount(30)
-        }
     }
 
     definition {
